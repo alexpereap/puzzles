@@ -24,5 +24,5 @@ def sockMerchant(n, ar):
     return total_pairs
 
     
-r = sockMerchant(1, [1, 1, 3, 1, 2, 1, 3, 3, 3, 3])
+r = sockMerchant(10, [1, 1, 3, 1, 2, 1, 3, 3, 3, 3])
 print(r)
