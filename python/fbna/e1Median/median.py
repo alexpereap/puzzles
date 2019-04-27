@@ -7,7 +7,7 @@ def proccessInput(input_file):
     list = []
     n = int(input[0])
 
-    for i in range(1, n + 1):
+    for i in range(1, n + 1): # Linear Time complexity O(n): time execution proportional to list size
         action = input[i].split(' ')[0]
         value = int(input[i].split(' ')[1])
 
@@ -19,12 +19,12 @@ def proccessInput(input_file):
             if value not in list:
                 print('Wrong!')
             else: 
-                list.remove(value) # O(n) time increases depending on the list size (can be costly on large lists)
+                list.remove(value) # Linear Time complexity O(n): time execution proportional to list size
                 print(calculateMedian(list))
 
 
 def calculateMedian(list):
-    list.sort() # time complexity n log2 n 
+    list.sort() # time complexity n log2 n
     l = len(list) # time complexity O(1) constant time, fast - no cost
 
     # if empty list return wrong
